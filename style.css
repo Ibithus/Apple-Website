@@ -1,0 +1,199 @@
+/*Generic*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+h1.About {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+p.About {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.Buy-Button {
+    border-radius: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: blue;
+    border: none;
+    padding: 4px 8px;
+    margin-top: 8px;
+}
+
+.Info {
+    font-size: 16px;
+}
+
+/*Navigation*/
+
+.Navigation {
+  width: 100%;
+  height: 50px;
+  background-color: #1c1c1e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*This Makes Image Fit The Container And Maintain Aspect Ratio
+  Object Fit Contain Must Be Placed On The Image Not Container*/
+
+.Logo-Container {
+  width: 100%;
+  max-width: 50px;
+  height: 100%;
+  margin-left: 24px;
+}
+
+.Logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.Nav-Links {
+  margin-right: 24px;
+  color: #e5e4e9;
+}
+
+/*Landing Page*/
+
+/*This Makes The Header Take 100% Viewport Height But Allows Next Section
+  To Be Seen Straight Away By Taking Away The Navigation Bar Height*/
+
+header {
+  height: calc(100vh - 50px);
+  background-color: #f5f4f6;
+  text-align: center;
+  padding-top: 24px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+/*Line Height Is Used To Add Padding Between Lines (Line-Spacing)
+  This Is Used To Make Text More Appealing To Read On Info Section*/
+
+.Row {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.Laptop-Container {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.Laptop {
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+/*iPad Section*/
+
+.Container {
+  background-color: #f5f4f6;
+  padding-top: 24px;
+  text-align: center;
+}
+
+.Widget-Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 24px;
+}
+
+.Widgets {
+    width: 45%;
+    height: 400px;
+    background-color: white;
+    margin: 12px 12px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Widget Section*/
+
+.Product-Container {
+    max-width: 300px;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 8px;
+}
+
+.Product {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#iPad {
+    margin-bottom: 8px;
+}
+
+/*Mac Section*/
+
+.Mac {
+    background-color: #fafafa;
+}
+
+/*Media Queries*/
+
+@media (max-width:576px) {
+  p.About {
+    font-size: 16px;
+  }
+  h1.About {
+    font-size: 24px;
+  }
+  h2.Title {
+    font-size: 18px;
+  }
+  p.Info {
+    font-size: 14px;
+  }
+  .Buy-Button {
+    font-size: 14px;
+  }
+
+  .Widgets {
+    width: 100%;
+}
+}
+
+@media (max-width:768px) {
+  h1.About {
+    font-size: 28px;
+  }
+  p.About {
+    font-size: 18px;
+  }
+  h2.Title {
+    font-size: 20px;
+  }
+  p.Info {
+    font-size: 14px;
+  }
+  .Buy-Button {
+    font-size: 14px;
+  }
+}
